@@ -19,6 +19,7 @@ SimpleCare는 현대 사회에서 건강한 생활을 유지하고 싶은 사람
 다양한 운동의 칼로리 소모량을 제공하여, 사용자가 효율적으로 운동 계획을 세울 수 있습니다.
 
 -----------------------------------------------------
+
 ## 2. 프로젝트 개요:
 
 SimpleCare는 간편하고 직관적인 사용자 경험을 제공합니다. 처음 앱에 로그인하면 사용자는 개인 맞춤형 프로필을 생성할 수 있습니다. 이 프로필에는 목표 몸무게, 현재 키, 현재 몸무게, 나이 등의 정보가 포함됩니다.
@@ -38,7 +39,33 @@ SimpleCare는 간편하고 직관적인 사용자 경험을 제공합니다. 처
 매일의 활동과 식사 내용을 기록할 수 있는 일지 기능을 제공합니다. 이를 통해 사용자는 자신의 건강 상태를 시각적으로 추적하고 개선할 수 있습니다.
 
 -------------------------------------
-## 3.결과:
+## 3.시연 화면:
+
+-로그인후 홈화면
+![1](https://github.com/hs-2171215-choiseojung/simplecare/assets/115949608/ef9cee67-6b36-455b-aa21-5b270873f08f)
+
+-마이페이지
+![화면 캡처 2024-06-19 193901](https://github.com/hs-2171215-choiseojung/simplecare/assets/115949608/90904484-15cf-4a8a-b797-d5c00b8eff13)
+
+-식단 입력
+![화면 캡처 2024-06-19 193726](https://github.com/hs-2171215-choiseojung/simplecare/assets/115949608/41d065dc-2cfe-4c21-9a8f-b88f30cecc82)
+![화면 캡처 2024-06-19 193754](https://github.com/hs-2171215-choiseojung/simplecare/assets/115949608/ffa59e24-337c-4573-abdb-6099c6cafa7b)
+
+-체중 입력
+![화면 캡처 2024-06-19 193928](https://github.com/hs-2171215-choiseojung/simplecare/assets/115949608/d4c01824-c4b9-43b9-a4b1-cc439a634329)
+
+-운동입력
+![화면 캡처 2024-06-19 194046](https://github.com/hs-2171215-choiseojung/simplecare/assets/115949608/150f913c-935d-4da3-97a3-f354292b8cb7)
+![화면 캡처 2024-06-19 194147](https://github.com/hs-2171215-choiseojung/simplecare/assets/115949608/3bf69f7c-df38-4d09-a377-d821dc4fc91b)
+
+-간헐적 타이머
+![화면 캡처 2024-06-19 194514](https://github.com/hs-2171215-choiseojung/simplecare/assets/115949608/88a6a646-9030-46be-8375-a66f80f4a3be)
+
+-일지
+![화면 캡처 2024-06-19 194606](https://github.com/hs-2171215-choiseojung/simplecare/assets/115949608/63815b8d-b77c-4c5a-8520-7dc31e61bdd7)
+
+-저장 후 홈화면
+![화면 캡처 2024-06-19 194237](https://github.com/hs-2171215-choiseojung/simplecare/assets/115949608/0721eb94-b22d-4e5e-85cf-8196f4b0131b)
 
 ---------------------------------------------------------
 
