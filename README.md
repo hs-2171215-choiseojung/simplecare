@@ -42,30 +42,46 @@ SimpleCare는 간편하고 직관적인 사용자 경험을 제공합니다. 처
 ## 3.시연 화면:
 
 -로그인후 홈화면
+
 ![1](https://github.com/hs-2171215-choiseojung/simplecare/assets/115949608/ef9cee67-6b36-455b-aa21-5b270873f08f)
 
+
 -마이페이지
+
 ![화면 캡처 2024-06-19 193901](https://github.com/hs-2171215-choiseojung/simplecare/assets/115949608/90904484-15cf-4a8a-b797-d5c00b8eff13)
 
+
 -식단 입력
+
 ![화면 캡처 2024-06-19 193726](https://github.com/hs-2171215-choiseojung/simplecare/assets/115949608/41d065dc-2cfe-4c21-9a8f-b88f30cecc82)
 ![화면 캡처 2024-06-19 193754](https://github.com/hs-2171215-choiseojung/simplecare/assets/115949608/ffa59e24-337c-4573-abdb-6099c6cafa7b)
 
+
 -체중 입력
+
 ![화면 캡처 2024-06-19 193928](https://github.com/hs-2171215-choiseojung/simplecare/assets/115949608/d4c01824-c4b9-43b9-a4b1-cc439a634329)
 
+
 -운동입력
+
 ![화면 캡처 2024-06-19 194046](https://github.com/hs-2171215-choiseojung/simplecare/assets/115949608/150f913c-935d-4da3-97a3-f354292b8cb7)
 ![화면 캡처 2024-06-19 194147](https://github.com/hs-2171215-choiseojung/simplecare/assets/115949608/3bf69f7c-df38-4d09-a377-d821dc4fc91b)
 
+
 -간헐적 타이머
+
 ![화면 캡처 2024-06-19 194514](https://github.com/hs-2171215-choiseojung/simplecare/assets/115949608/88a6a646-9030-46be-8375-a66f80f4a3be)
 
+
 -일지
+
 ![화면 캡처 2024-06-19 194606](https://github.com/hs-2171215-choiseojung/simplecare/assets/115949608/63815b8d-b77c-4c5a-8520-7dc31e61bdd7)
 
+
 -저장 후 홈화면
+
 ![화면 캡처 2024-06-19 194237](https://github.com/hs-2171215-choiseojung/simplecare/assets/115949608/0721eb94-b22d-4e5e-85cf-8196f4b0131b)
+
 
 ---------------------------------------------------------
 
