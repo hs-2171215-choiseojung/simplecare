@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/goal_weight_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="목표 체중 입력 (kg)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/unit_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/units_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goal_weight_input"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/height_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="키 입력 (cm)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/unit_spinner"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/weight_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="체중 입력 (kg)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/height_input"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/bmi_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BMI 결과"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weight_input"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/bmi_category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BMI 범주"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bmi_result"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/weight_left_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="목표 체중까지 남은 체중"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bmi_category"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/weight_left_result"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="저장" />
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="뒤로가기"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

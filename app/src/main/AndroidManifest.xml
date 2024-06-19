@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/simplecare"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 메인 화면으로 설정된 MainActivity -->
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".MidnightBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_TICK" />
+                <!-- 필요한 다른 액션들 추가 -->
+            </intent-filter>
+        </receiver>
+
+        <!-- 기타 화면들 -->
+        <activity android:name=".p1" android:exported="false"></activity>
+        <activity android:name=".LoginActivity" android:exported="true"></activity>
+        <activity android:name=".RegisterActivity" android:exported="false"></activity>
+
+        <!-- meal_input_activity 추가 -->
+        <activity android:name=".MealInputActivity" android:exported="false"></activity>
+
+        <activity android:name=".WeightInputActivity" android:exported="false"></activity>
+        <activity android:name=".IntermittentFastingActivity" android:exported="false"></activity>
+        <activity android:name=".MyPageActivity" android:exported="false"></activity>
+        <activity android:name=".ExerciseActivity" android:exported="false"></activity>
+        <activity android:name=".ExerciseDietTrackerActivity" android:exported="false"></activity>
+        <activity android:name=".ExerciseRecordActivity" android:exported="false"></activity>
+
+        <activity android:name=".p2" android:exported="false"></activity>
+        <activity android:name=".TodoListActivity"></activity>
+
+
+    </application>
+
+</manifest>

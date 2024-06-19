@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 대시보드 메뉴 아이템 -->
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_dashboard"
+        android:title="홈" />
+
+    <!--  기록 메뉴 아이템 -->
+    <item
+        android:id="@+id/navigation_report_log"
+        android:icon="@drawable/ic_report_log"
+        android:title="기록" />
+    <!-- 프로필 및 설정 메뉴 아이템 -->
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="프로필" />
+</menu>

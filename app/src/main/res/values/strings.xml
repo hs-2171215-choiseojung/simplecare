@@ -1,0 +1,28 @@
+<resources>
+    <string name="simplecare">simplecare</string>
+    <string name="hint_search_food">음식 이름을 입력하세요</string>
+
+
+
+    <string name="navigation_home">홈</string>
+    <string name="title_food_log">기록</string>
+    <string name="title_profile">프로필</string>
+
+
+    <string-array name="units_array">
+        <item>kg/cm</item>
+        <item>lbs/inch</item>
+    </string-array>
+
+    <string name="nutrition_advice">
+        단식 중에는 영양소를 균형 있게 섭취하세요. 단백질, 비타민, 미네랄이 중요합니다.
+        \n수분을 충분히 섭취하세요. 하루에 최소 8잔의 물을 마시는 것이 좋습니다.
+        \n단식 중 적당한 에너지 섭취를 유지하세요. 기운이 떨어질 경우 건강한 간식을 섭취하세요.
+    </string>
+
+    <string-array name="meal_types">
+        <item>아침</item>
+        <item>점심</item>
+        <item>저녁</item>
+    </string-array>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_height="180dp"
+        android:layout_width="match_parent"
+        android:id="@+id/chart"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </com.github.mikephil.charting.charts.LineChart>
+
+    <!-- 식단 입력 버튼 -->
+    <Button
+        android:id="@+id/meal_input_button"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="16dp"
+        android:text="식단 입력\n 총칼로리: 0kacl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 체중 버튼 -->
+    <Button
+        android:id="@+id/weight_button"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="체중 입력: 0kg"
+        app:layout_constraintEnd_toStartOf="@+id/temporary_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meal_input_button" />
+
+    <!-- 임시 버튼 -->
+    <Button
+        android:id="@+id/temporary_button"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="간헐적 타이머"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/weight_button"
+        app:layout_constraintTop_toBottomOf="@+id/meal_input_button" />
+
+    <!-- 운동 기록 버튼 -->
+    <Button
+        android:id="@+id/exercise_record_button"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="운동 기록 \n소모 칼로리: 0kcal"
+        app:layout_constraintEnd_toStartOf="@+id/exercise_diary_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight_button" />
+
+    <!-- 운동 일지 버튼 -->
+    <Button
+        android:id="@+id/exercise_diary_button"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="일지"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/exercise_record_button"
+        app:layout_constraintTop_toBottomOf="@+id/temporary_button" />
+
+
+
+
+    <!-- BottomNavigationView를 화면 하단에 배치 -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
