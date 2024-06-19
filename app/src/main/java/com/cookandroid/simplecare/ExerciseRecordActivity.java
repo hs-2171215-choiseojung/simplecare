@@ -1,13 +1,17 @@
 package com.cookandroid.simplecare;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
@@ -30,7 +34,7 @@ public class ExerciseRecordActivity extends AppCompatActivity {
         youtubeWebView = findViewById(R.id.youtube_webview);
 
         // 웹뷰 설정
-        youtubeWebView.setWebViewClient(new WebViewClient());
+        youtubeWebView.setWebViewClient(new MyWebViewClient()); // 커스텀 WebViewClient 설정
         youtubeWebView.getSettings().setJavaScriptEnabled(true); // 자바스크립트 활성화
         youtubeWebView.getSettings().setDomStorageEnabled(true); // DOM 스토리지 활성화
         youtubeWebView.getSettings().setLoadsImagesAutomatically(true); // 이미지 자동 로드 활성화
@@ -60,8 +64,36 @@ public class ExerciseRecordActivity extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish(); // 현재 액티비티 종료
+                finish();
             }
         });
+    }
+
+    // WebViewClient를 상속받은 커스텀 클래스 정의
+    private class MyWebViewClient extends WebViewClient {
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+            String url = request.getUrl().toString();
+            if (url.startsWith("https://www.youtube.com/")) {
+                return false;
+            } else if (url.startsWith("https://example.com/")) {
+
+                Toast.makeText(ExerciseRecordActivity.this, "내부 처리: " + url, Toast.LENGTH_SHORT).show();
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        @Override
+        public void onPageStarted(WebView view, String url, Bitmap favicon) {
+            super.onPageStarted(view, url, favicon);
+        }
+
+        @Override
+        public void onPageFinished(WebView view, String url) {
+            super.onPageFinished(view, url);
+
+        }
     }
 }

@@ -116,7 +116,7 @@ public class ExerciseActivity extends AppCompatActivity {
             }
         });
 
-        // 칼로리 기록 버튼 클릭 리스너 설정
+        // 유튜브 웹 검색 버튼 클릭 리스너 설정
         calButton.setOnClickListener(v -> {
             Intent intent = new Intent(ExerciseActivity.this, ExerciseRecordActivity.class);
             startActivity(intent);

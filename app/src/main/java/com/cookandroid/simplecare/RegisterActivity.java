@@ -65,6 +65,8 @@ public class RegisterActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                 startActivity(intent);
+                Toast.makeText(RegisterActivity.this, "가입이 완료되었습니다.", Toast.LENGTH_SHORT).show();
+
                 finish(); // RegisterActivity 종료
             }
         });

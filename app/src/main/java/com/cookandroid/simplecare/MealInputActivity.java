@@ -123,6 +123,12 @@ public class MealInputActivity extends AppCompatActivity {
                 // 파이 차트 초기화
                 resetPieChart();
                 Toast.makeText(MealInputActivity.this, "누적 칼로리가 초기화되었습니다.", Toast.LENGTH_SHORT).show();
+
+                // 결과를 이전 액티비티로 전달
+                Intent resultIntent = new Intent();
+                resultIntent.putExtra("totalCalories", 0); // 0으로 초기화된 칼로리 전달
+                setResult(RESULT_OK, resultIntent);
+
             }
         });
 
@@ -367,19 +373,18 @@ public class MealInputActivity extends AppCompatActivity {
 
     // 남성의 경우 하루 섭취 권장 칼로리를 계산하는 메서드
     private double calculateRecommendedCaloriesForMale() {
-        // 남성의 경우 특정한 계산식을 사용하여 칼로리를 계산합니다. 예시로 2500 kcal을 반환합니다.
+
         return 2500;
     }
 
     // 여성의 경우 하루 섭취 권장 칼로리를 계산하는 메서드
     private double calculateRecommendedCaloriesForFemale() {
-        // 여성의 경우 특정한 계산식을 사용하여 칼로리를 계산합니다. 예시로 2000 kcal을 반환합니다.
         return 2000;
     }
 
     // 성별 정보가 없는 경우 기본값으로 하루 섭취 권장 칼로리를 계산하는 메서드
     private double calculateRecommendedCaloriesForDefault() {
-        // 성별 정보가 없는 경우 기본값으로 설정된 칼로리를 반환합니다. 예시로 2250 kcal을 반환합니다.
+
         return 2250;
     }
 
