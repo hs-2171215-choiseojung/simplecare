@@ -18,5 +18,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "prac1-12"
+rootProject.name = "simplecare"
 include(":app")
