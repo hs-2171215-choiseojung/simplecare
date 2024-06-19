@@ -67,7 +67,7 @@ public class p1 extends AppCompatActivity {
             if (item.getItemId() == R.id.navigation_home) {
                 startActivity(new Intent(this, p1.class));
                 return true;
-            } else if (item.getItemId() == R.id.navigation_food_log) {
+            } else if (item.getItemId() == R.id.navigation_report_log) {
                 startActivity(new Intent(this,ExerciseDietTrackerActivity.class));
                 return true;
             } else if (item.getItemId() == R.id.navigation_profile) {
